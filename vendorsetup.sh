@@ -1,0 +1,77 @@
+
+
+# Configuraciones Generales
+export ALLOW_MISSING_DEPENDENCIES=1
+export TARGET_ARCH="arm64"
+export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
+export LC_ALL="C"
+export OF_MAINTAINER="TheDarkDeath788"
+export FOX_BUILD_TYPE="In-Dev"
+export FOX_VERSION="R10_1"
+export FOX_BUILD_DEVICE="a31"
+export OF_CLASSIC_LEDS_FUNCTION=0
+export FOX_DELETE_AROMAFM=0
+export OF_CLOCK_POS=1
+export OF_IGNORE_LOGICAL_MOUNT_ERRORS=1
+export OF_FORCE_PREBUILT_KERNEL=1
+export OF_NO_SPLASH_CHANGE=0
+export OF_STATUS_INDENT_RIGHT=48
+export OF_STATUS_INDENT_LEFT=48
+export OF_WIPE_METADATA_AFTER_DATAFORMAT=1
+export OF_OPTIONS_LIST_NUM=8
+
+# Configuraciones de Particiones
+export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
+export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
+export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/by-name/recovery"
+
+# Configuraciones de Seguridad
+export OF_ADVANCED_SECURITY=1
+export OF_KEEP_DM_VERITY=1
+export OF_DISABLE_FORCED_ENCRYPTION=1
+export OF_FORCE_DISABLE_FORCED_ENCRYPTION=1
+
+# Configuraciones de Herramientas y Utilidades
+export OF_USE_MAGISKBOOT=1
+export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
+export OF_USE_LZMA_COMPRESSION=1
+export LZMA_RAMDISK_TARGETS="recovery"
+export FOX_USE_BASH_SHELL=1
+export FOX_ASH_IS_BASH=1
+export FOX_REPLACE_BUSYBOX_PS=1
+export FOX_USE_NANO_EDITOR=1
+export FOX_USE_SED_BINARY=1
+export FOX_USE_TAR_BINARY=1
+export FOX_USE_UNZIP_BINARY=1
+export FOX_USE_XZ_UTILS=1
+export OF_ENABLE_LPTOOLS=1
+export OF_ENABLE_FS_COMPRESSION=1
+export OF_FIX_DECRYPTION_ON_DATA_MEDIA=1
+
+# Configuraciones de Funciones Específicas
+export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1
+export OF_NO_TREBLE_COMPATIBILITY_CHECK=0
+export OF_SKIP_MULTIUSER_FOLDERS_BACKUP=1
+export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
+export FOX_VARIANT="AOSP"
+export OF_FLASHLIGHT_ENABLE=1
+export FOX_NO_SAMSUNG_SPECIAL=0
+export FOX_PATCH_VBMETA_FLAG=1
+export OF_FORCE_USE_RECOVERY_FSTAB=1
+export OF_PATCH_AVB20=1
+export OF_SUPPORT_VBMETA_AVB2_PATCHING=1
+export OF_SCREEN_H=2400
+export FOX_DYNAMIC_SAMSUNG_FIX=1
+export FOX_NO_SAMSUNG_SPECIAL=1
+export PLATFORM_SECURITY_PATCH="2099-12-31"
+export TW_DEFAULT_LANGUAGE="es"
+export OF_USE_TWRP_SAR_DETECT=1
+
+# Configuraciones de Caminos de Archivos
+export OF_FL_PATH1="/system/flashlight/flash.sh"
+#export OF_FL_PATH2=""
+export OF_MAINTAINER_AVATAR="${GITHUB_WORKSPACE}/OrangeFox/fox_${{ github.event.inputs.MANIFEST_BRANCH }}/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/maintainer.png"
+#export OF_MAINTAINER_AVATAR="/system/orangefl/maintainer.png"
+
+# Configuraciones de Aplicaciones
+export FOX_ENABLE_APP_MANAGER=1
